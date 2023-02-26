@@ -6,13 +6,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-Black.woff) format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-Black.woff2) format('woff2');
     font-weight: 900;
     font-style: normal;
@@ -22,13 +15,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-Bold.woff) format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-Bold.woff2) format('woff2');
     font-weight: 700;
     font-style: normal;
@@ -38,13 +24,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-BoldItalic.woff) format('woff');
-    font-weight: 700;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-BoldItalic.woff2) format('woff2');
     font-weight: 700;
     font-style: italic;
@@ -54,13 +33,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-ExtraBold.woff) format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-ExtraBold.woff2) format('woff2');
     font-weight: 800;
     font-style: normal;
@@ -70,13 +42,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-ExtraBoldItalic.woff) format('woff');
-    font-weight: 800;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-ExtraBoldItalic.woff2) format('woff2');
     font-weight: 800;
     font-style: italic;
@@ -86,13 +51,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-Regular.woff) format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-Regular.woff2) format('woff2');
     font-weight: 400;
     font-style: normal;
@@ -102,13 +60,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-SemiBold.woff) format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Nunito';
     src: url(../assets/fonts/Nunito-SemiBold.woff2) format('woff2');
     font-weight: 600;
     font-style: normal;
@@ -118,13 +69,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Mulish';
     src: url(../assets/fonts/Mulish-Black.woff) format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Mulish';
     src: url(../assets/fonts/Mulish-Black.woff2) format('woff2');
     font-weight: 900;
     font-style: normal;
@@ -134,13 +78,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Mulish';
     src: url(../assets/fonts/Mulish-ExtraBold.woff) format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Mulish';
     src: url(../assets/fonts/Mulish-ExtraBold.woff2) format('woff2');
     font-weight: 800;
     font-style: normal;
@@ -150,13 +87,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Mulish';
     src: url(../assets/fonts/Mulish-SemiBold.woff) format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Mulish';
     src: url(../assets/fonts/Mulish-SemiBold.woff2) format('woff2');
     font-weight: 600;
     font-style: normal;
@@ -166,13 +96,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Manrope';
     src: url(../assets/fonts/Manrope-Bold.woff) format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Manrope';
     src: url(../assets/fonts/Manrope-Bold.woff2) format('woff2');
     font-weight: 700;
     font-style: normal;
@@ -182,13 +105,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Manrope';
     src: url(../assets/fonts/Manrope-Medium.woff) format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Manrope';
     src: url(../assets/fonts/Manrope-Medium.woff2) format('woff2');
     font-weight: 500;
     font-style: normal;
@@ -198,13 +114,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Manrope';
     src: url(../assets/fonts/Manrope-SemiBold.woff) format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Manrope';
     src: url(../assets/fonts/Manrope-SemiBold.woff2) format('woff2');
     font-weight: 600;
     font-style: normal;
@@ -214,14 +123,7 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Roboto';
     src: url(../assets/fonts/Roboto-Black.woff) format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(../assets/fonts/Roboto-Black.woff2) format('woff2');
+    src: url(../assets/fonts/Roboto-Black.woff2) format('woff2')
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -230,13 +132,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Roboto';
     src: url(../assets/fonts/Roboto-Bold.woff) format('woff');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
     src: url(../assets/fonts/Roboto-Bold.woff2) format('woff2');
     font-weight: 700;
     font-style: normal;
@@ -246,13 +141,6 @@ font-family: 'Roboto', sans-serif; */
 @font-face {
     font-family: 'Roboto';
     src: url(../assets/fonts/Roboto-Regular.woff) format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Roboto';
     src: url(../assets/fonts/Roboto-Regular.woff2) format('woff2');
     font-weight: 400;
     font-style: normal;

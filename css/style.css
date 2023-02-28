@@ -179,3 +179,54 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.header__inner {
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    padding-right: 35px;
+}
+
+.footer {
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #D9B3DC;
+}
+
+.footer__logo {
+    padding-right: 65px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    padding: 15px 15px 65px 15px;
+
+}
+
+.footer__main {
+    display: flex;
+    gap: 100px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 19px;
+    width: 210px;
+}
+
+.footer__copy {
+    display: flex;
+    align-items: end;
+}

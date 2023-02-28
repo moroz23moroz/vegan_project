@@ -153,17 +153,24 @@ body {
     background-image: url(../assets/images/background.png);
 }
 
-/* body {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 45px;
-} */
+body {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #0D1288;
+}
 
-.wrapper {
+.wrapper,
+.wrapper-prod {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+}
+
+.wrapper-prod {
+    background-image: url(../assets/images/background-prod.png);
 }
 
 .main {

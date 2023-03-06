@@ -183,6 +183,7 @@ body {
 
 .container,
 .promo__container,
+.about__container,
 .products__container {
     max-width: 1200px;
     margin: 0 auto;
@@ -240,10 +241,8 @@ body {
     align-items: end;
 }
 
-.promo {
-}
-
-.promo__container {
+.promo__container, 
+.about__container {
     position: relative;
 }
 
@@ -251,7 +250,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 75px;
-    padding-bottom: 170px;
+    padding-bottom: 150px;
     gap: 30px;
 }
 
@@ -276,7 +275,6 @@ body {
     font-weight: 700;
     line-height: 41px;
     margin-bottom: 27px;
-
 }
 
 .promo__text,
@@ -342,6 +340,121 @@ body {
     margin-right: -50px;
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
+
+.about {
+}
+.about__container {
+}
+
+.about__title {
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #0D1288;
+    margin-bottom: 46px;
+}
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 146px;
+    gap: 70px;
+}
+
+.about__content {
+    width: 47%;
+}
+.about__points {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 52px 32px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 106%;
+    color: #0D1288;
+}
+
+.about__count {
+    width: 45%;
+}
+.about__count-info {
+    width: 100%;
+}
+.info {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 53px;
+    color: #647BFF;
+}
+
+.info:first-child {
+    margin-top: -20px;
+}
+
+.info:last-child {
+    text-align: end;
+    margin-top: 10px;
+}
+.about__count-data {
+}
+.about__count-sum {
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 215px;
+    line-height: 90.7%;
+    background: linear-gradient(165.95deg, #34AAFF 38.97%, #CF10FF 102.9%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    text-shadow: 4px 1px 18px rgba(255, 255, 255, 0.16);
+    z-index: 1;
+}
+
+.about__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -200px;
+    z-index: 2;
+}
+.about__count-leaf61 {
+   
+}
+.about__count-ball53 {
+}
+.about__count-ball51 {
+}
+.about__count-fl72 {
+}
+.about__application {
+    width: 100%;
+    height: 50px;
+    margin: 30px auto;
+    background: #DED3FC;
+    border: 1px solid #DED3FC;
+    border-radius: 29px;
+}
+.about__application-text {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 132.7%;
+    color: #4A2CFF;
+}
+
+
 
 .products__container {
     position: relative;

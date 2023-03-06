@@ -257,6 +257,8 @@ body {
 
 .promo__content {
     color: #FFFEFE;
+    text-align: left;
+    letter-spacing: 0em;
 }
 
 .promo__title {
@@ -265,7 +267,6 @@ body {
     font-weight: 900;
     font-size: 51px;
     line-height: 47px;
-    letter-spacing: 0em;
     margin-bottom: 25px;
 }
 
@@ -274,8 +275,6 @@ body {
     font-size: 30px;
     font-weight: 700;
     line-height: 41px;
-    letter-spacing: 0em;
-    text-align: left;
     margin-bottom: 27px;
 
 }
@@ -288,8 +287,6 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
     margin-bottom: 25px;
 }
 
@@ -299,14 +296,23 @@ body {
     border-radius: 49px;
     background: #4A2CFF;
     border: #4A2CFF;
-    box-shadow: 0px 4px 19px 4px #FFFFFF5C;
+    box-shadow: 0px 4px 19px 4px rgba(255, 255, 255, 0.4);
+    margin: 25px 0;
+}
+
+.promo__btn:hover {
+    cursor: pointer;
+    box-shadow: 2px 8px 38px 8px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+.promo__btn-text {
     font-family: Roboto;
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
-    letter-spacing: 0em;
     color: #FFFFFF;
-    margin: 25px 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .promo__leafs {

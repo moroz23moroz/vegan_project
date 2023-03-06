@@ -149,8 +149,8 @@ font-family: 'Roboto', sans-serif; */
 
 html,
 body {
-    height: 100%;
-    background-image: url(../assets/images/background.png);
+    
+    min-height: 100%;
 }
 
 body {
@@ -160,6 +160,7 @@ body {
     font-size: 22px;
     line-height: 29px;
     color: #0D1288;
+    background: linear-gradient(180deg, #5400DC 2.65%, #9E3CFF 11.11%, #79CFFF 20.31%, #CDFFFF 32.29%, #FFFFFF 39.24%, #CDFFFF 50%, #79CFFF 59.19%, #9E3CFF 69.06%, #5400DC 86.98%) no-repeat;
 }
 
 .wrapper,

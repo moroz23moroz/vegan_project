@@ -217,6 +217,31 @@ body {
     padding-right: 35px;
 }
 
+.request__inner {
+    padding: 125px 0;
+    position: relative;
+}
+
+.request__title {
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #0D1288;
+}
+
+.request__title::before {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/leaves.png);
+    width: 823px;
+    height: 278px;
+    top: 0;
+    right: 0;
+}
+
 .footer {
     font-family: 'Nunito';
     font-weight: 600;

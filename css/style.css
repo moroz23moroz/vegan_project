@@ -611,7 +611,11 @@ body {
     line-height: 24px;
 }
 
-.milk {
+.milk,
+.alpro,
+.diferent,
+.leaf,
+.energy {
     position: relative;
 }
 
@@ -623,4 +627,64 @@ body {
     height: 204.13px;
     right: -164px;
     top: -110px;
+}
+
+.milk::before {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/de-olio.png);
+    width: 385.45px;
+    height: 385.45px;
+    right: -324px;
+    bottom: -310px;
+}
+
+.alpro::before {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/leaf2.png);
+    width: 302px;
+    height: 270.26px;
+    bottom: -39px;
+    left: -49px;
+}
+
+.alpro::after {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/tetrapak.png);
+    width: 283px;
+    height: 631px;
+    bottom: -239px;
+    right: -400px;
+}
+
+.energy::after {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/energy.png);
+    width: 430.92px;
+    height: 723.29px;
+    bottom: -730px;
+    right: -350px;
+}
+
+.diferent::after {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/plate.png);
+    width: 312.54px;
+    height: 584.57px;
+    bottom: -639px;
+    right: -350px;
+}
+
+.leaf::before {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/leaf-add.png);
+    width: 174.09px;
+    height: 204.13px;
+    left: -165px;
+    bottom: -120px
 }

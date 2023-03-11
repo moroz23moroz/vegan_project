@@ -187,6 +187,8 @@ body {
 
 .wrapper-prod {
     background-image: url(../assets/images/background-prod.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main {
@@ -282,7 +284,7 @@ body {
     align-items: end;
 }
 
-.promo__container, 
+.promo__container,
 .about__container {
     position: relative;
 }
@@ -345,6 +347,7 @@ body {
     transition: all 0.3s ease;
     transform: scale(1.05);
 }
+
 .promo__btn-text {
     font-family: Roboto;
     font-size: 24px;
@@ -357,16 +360,17 @@ body {
 .promo__leafs {
     z-index: 3;
 }
-.leaf-16 {
-}
-.leaf-68 {
-}
-.leaf-65 {
-}
-.leaf-12 {
-}
-.promo__img {
-}
+
+.leaf-16 {}
+
+.leaf-68 {}
+
+.leaf-65 {}
+
+.leaf-12 {}
+
+.promo__img {}
+
 .promo-jar {
     /* background-image: url(../assets/images/promo-jar.png); */
     position: absolute;
@@ -382,10 +386,9 @@ body {
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-.about {
-}
-.about__container {
-}
+.about {}
+
+.about__container {}
 
 .about__title {
     font-family: 'Nunito';
@@ -397,6 +400,7 @@ body {
     color: #0D1288;
     margin-bottom: 46px;
 }
+
 .about__inner {
     display: flex;
     justify-content: space-between;
@@ -408,6 +412,7 @@ body {
 .about__content {
     width: 47%;
 }
+
 .about__points {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -423,9 +428,11 @@ body {
 .about__count {
     width: 45%;
 }
+
 .about__count-info {
     width: 100%;
 }
+
 .info {
     font-family: 'Nunito';
     font-style: normal;
@@ -443,8 +450,9 @@ body {
     text-align: end;
     margin-top: 10px;
 }
-.about__count-data {
-}
+
+.about__count-data {}
+
 .about__count-sum {
     text-align: center;
     font-family: 'Roboto';
@@ -469,15 +477,15 @@ body {
     margin-top: -200px;
     z-index: 2;
 }
-.about__count-leaf61 {
-   
-}
-.about__count-ball53 {
-}
-.about__count-ball51 {
-}
-.about__count-fl72 {
-}
+
+.about__count-leaf61 {}
+
+.about__count-ball53 {}
+
+.about__count-ball51 {}
+
+.about__count-fl72 {}
+
 .about__application {
     width: 100%;
     height: 50px;
@@ -486,6 +494,7 @@ body {
     border: 1px solid #DED3FC;
     border-radius: 29px;
 }
+
 .about__application-text {
     font-family: 'Nunito';
     font-style: normal;
@@ -499,10 +508,7 @@ body {
 
 .products__container {
     position: relative;
-}
-
-.products-main {
-    color: #FFFEFE;
+    color: #FFFFFF;
 }
 
 .products-main__inner,
@@ -535,7 +541,6 @@ body {
     font-weight: 900;
     font-size: 51px;
     line-height: 58px;
-    color: #FFFFFF;
 }
 
 .products-main__text {
@@ -544,4 +549,78 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 27px;
+}
+
+.products-table {
+    margin-bottom: 175px;
+}
+
+.products-table__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 170px;
+}
+
+.products__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 53px;
+    padding-bottom: 25px;
+    margin-bottom: 85px;
+    border-bottom: 4px solid white;
+}
+
+.products__table {
+    width: 876px;
+    padding-bottom: 55px;
+    border-bottom: 4px solid white;
+}
+
+.products__column-inner {
+    font-family: 'Nunito';
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 55px;
+}
+
+.products__row {
+    display: flex;
+    gap: 150px;
+}
+
+.prod {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prod p:nth-child(2) {
+    font-family: 'Mulish';
+    font-weight: 900;
+    line-height: 28px;
+}
+
+.prod__desc {
+    width: 377px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.milk {
+    position: relative;
+}
+
+.milk::after {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/leaf.png);
+    width: 170.09px;
+    height: 204.13px;
+    right: -164px;
+    top: -110px;
 }

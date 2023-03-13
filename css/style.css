@@ -291,6 +291,7 @@ body {
 
 .promo__inner {
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding-top: 75px;
     padding-bottom: 150px;
@@ -359,20 +360,24 @@ body {
 
 .promo__leafs {
     z-index: 3;
+    position: relative;
 }
 
-.leaf-16 {}
+.leaf-16 {
+}
 
-.leaf-68 {}
+.leaf-68 {
+}
 
 .leaf-65 {}
 
 .leaf-12 {}
 
-.promo__img {}
+.promo__img {
+    position: relative;
+}
 
 .promo-jar {
-    /* background-image: url(../assets/images/promo-jar.png); */
     position: absolute;
     z-index: 2;
     transform: rotate(4.65deg);
@@ -504,6 +509,118 @@ body {
     color: #4A2CFF;
 }
 
+.about__leafs {
+    display: flex;
+}
+.leaf-15 {
+}
+.leaf-64 {
+}
+.leaf-11 {
+}
+
+.details {
+    
+}
+
+.details__inner {
+    position: relative;
+    display: flex;
+    margin-bottom: 140px;
+    justify-content: space-between;
+}
+.details__left {
+    width: 546px;
+    height: 330px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 27px;
+    padding: 35px 120px 0px 40px;
+}
+.details__right {
+    width: 546px;
+    height: 295px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 27px;
+    padding: 30px 30px 0px 50px;
+}
+.details__title {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 53px;
+    color: #0D1288;
+    margin-bottom: 20px;
+}
+.details__text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 29px;
+    color: #0D1288;
+}
+.details__btn {
+    width: 264px;
+    height: 63px;
+    background: #9100B5;
+    box-shadow: 0px 4px 19px 4px rgba(255, 255, 255, 0.36);
+    border-radius: 49px;
+    border: 1px solid #9100B5;
+    margin-top: 20px;
+    margin-left: 180px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    
+}
+.details__btn:hover {
+    cursor: pointer;
+    box-shadow: 2px 8px 38px 8px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+.details__leafs {
+    position: relative;
+}
+
+.leaf13 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/pic-13.png);
+    width: 200px;
+    height: 120px;
+    right: 70px;
+}
+.leaf66 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/66.png);
+    width: 100px;
+    height: 125px;
+    right: 120px;
+    bottom: 30px;
+}
+.leaf14 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/pic-14.png);
+    width: 98.58px;
+    height: 152.35px;
+    left: 430px;
+}
+.leaf18 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/pic-18.png);
+    width: 200px;
+    height: 170px;
+    top: 270px;
+}
 
 
 .products__container {

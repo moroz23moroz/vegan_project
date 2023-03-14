@@ -359,41 +359,57 @@ body {
 }
 
 .promo__leafs {
-    z-index: 3;
     position: relative;
 }
-
-.leaf-16 {
+.leaf16 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/pic-16.png);
+    width: 170px;
+    height: 200px;
+    top: -50px;
 }
-
-.leaf-68 {
+.leaf68 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/68.png);
+    width: 150px;
+    height: 120px;
+    top: 120px;
+    left: -100px;
 }
-
-.leaf-65 {}
-
-.leaf-12 {}
+.leaf65 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/65.png);
+    width: 100px;
+    height: 125px;
+    bottom: 170px;
+}
+.leaf12 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/pic-12.png);
+    width: 290px;
+    height: 180px;
+    top: 450px;
+    left: -80px;
+}
 
 .promo__img {
     position: relative;
 }
-
 .promo-jar {
     position: absolute;
-    z-index: 2;
+    content: '';
+    background-image: url(../assets/images/promo-jar.png);
+    width: 180px;
+    height: 288px;
     transform: rotate(4.65deg);
+    left: 200px;
 }
-
 .promo-flower {
-    /* background-image: url(../assets/images/promo-flower.png); */
-    z-index: 1;
-    margin-top: 50px;
-    margin-right: -50px;
-    transform: matrix(1, 0, 0, 1, 0, 0);
 }
-
-.about {}
-
-.about__container {}
 
 .about__title {
     font-family: 'Nunito';
@@ -609,8 +625,8 @@ body {
     position: absolute;
     content: '';
     background-image: url(../assets/images/pic-14.png);
-    width: 98.58px;
-    height: 152.35px;
+    width: 95px;
+    height: 155px;
     left: 430px;
 }
 .leaf18 {

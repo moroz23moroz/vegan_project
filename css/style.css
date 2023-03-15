@@ -161,7 +161,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
     background-color: #CDFFFF80;
     border-radius: .4rem;
-    border: .2rem solid #CDFFFF;
+    border: .1rem solid #CDFFFF;
 }
 
 body::-webkit-scrollbar-thumb:hover {
@@ -482,32 +482,55 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 215px;
-    line-height: 90.7%;
+    line-height: 90%;
     background: linear-gradient(165.95deg, #34AAFF 38.97%, #CF10FF 102.9%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    /* text-fill-color: transparent; */
     text-shadow: 4px 1px 18px rgba(255, 255, 255, 0.16);
-    z-index: 1;
 }
 
 .about__img {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -200px;
+    position: relative;
+}
+.leaf61 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/leaf61.png);
+    width: 100px;
+    height: 100px;
+    left: 90px;
+    bottom: 5px;
+}
+.ball53 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/ball53.png);
+    width: 33px;
+    height: 33px;
+    left: 290px;
+    bottom: 130px;
+}
+.ball51 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/ball51.png);
+    width: 54px;
+    height: 55px;
+    left: 415px;
+    bottom: 35px;
     z-index: 2;
 }
-
-.about__count-leaf61 {}
-
-.about__count-ball53 {}
-
-.about__count-ball51 {}
-
-.about__count-fl72 {}
+.fl72 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/fl72.png);
+    width: 117.41px;
+    height: 160px;
+    left: 405px;
+    bottom: 60px;
+    z-index: 1;
+}
 
 .about__application {
     width: 100%;
@@ -517,7 +540,6 @@ body {
     border: 1px solid #DED3FC;
     border-radius: 29px;
 }
-
 .about__application-text {
     font-family: 'Nunito';
     font-style: normal;
@@ -528,13 +550,32 @@ body {
 }
 
 .about__leafs {
-    display: flex;
+    position: relative;
 }
-.leaf-15 {
+.leaf15 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/pic-15.png);
+    width: 130px;
+    height: 200px;
+    left: -150px;
 }
-.leaf-64 {
+.leaf64 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/64.png);
+    width:100px;
+    height: 130px;
+    left: 350px;
 }
-.leaf-11 {
+.leaf11 {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/pic-11.png);
+    width: 150px;
+    height: 200px;
+    left: 500px;
+    top: -90px;
 }
 
 .details {

@@ -387,7 +387,7 @@ body {
     position: relative;
     justify-content: space-between;
     padding-top: 75px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
     gap: 30px;
 }
 
@@ -454,6 +454,7 @@ body {
 .promo__leafs {
     position: relative;
 }
+
 .leaf16 {
     position: absolute;
     content: '';
@@ -462,6 +463,7 @@ body {
     height: 200px;
     top: -50px;
 }
+
 .leaf68 {
     position: absolute;
     content: '';
@@ -471,6 +473,7 @@ body {
     top: 120px;
     left: -100px;
 }
+
 .leaf65 {
     position: absolute;
     content: '';
@@ -479,6 +482,7 @@ body {
     height: 125px;
     top: 350px;
 }
+
 .leaf12 {
     position: absolute;
     content: '';
@@ -492,6 +496,7 @@ body {
 .promo__img {
     position: relative;
 }
+
 .promo-jar {
     position: absolute;
     content: '';
@@ -502,6 +507,7 @@ body {
     left: 280px;
     top: 70px;
 }
+
 .promo-flower {
     margin-right: -150px;
 }
@@ -521,7 +527,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 0;
-    padding-bottom: 146px;
+    padding-bottom: 136px;
     gap: 70px;
 }
 
@@ -586,6 +592,7 @@ body {
 .about__img {
     position: relative;
 }
+
 .leaf61 {
     position: absolute;
     content: '';
@@ -595,6 +602,7 @@ body {
     left: 90px;
     bottom: 5px;
 }
+
 .ball53 {
     position: absolute;
     content: '';
@@ -604,6 +612,7 @@ body {
     left: 290px;
     bottom: 130px;
 }
+
 .ball51 {
     position: absolute;
     content: '';
@@ -614,6 +623,7 @@ body {
     bottom: 35px;
     z-index: 2;
 }
+
 .fl72 {
     position: absolute;
     content: '';
@@ -633,6 +643,7 @@ body {
     border: 1px solid #DED3FC;
     border-radius: 29px;
 }
+
 .about__application-text {
     font-family: 'Nunito';
     font-style: normal;
@@ -645,6 +656,7 @@ body {
 .about__leafs {
     position: relative;
 }
+
 .leaf15 {
     position: absolute;
     content: '';
@@ -653,14 +665,16 @@ body {
     height: 200px;
     left: -150px;
 }
+
 .leaf64 {
     position: absolute;
     content: '';
     background-image: url(../assets/images/64.png);
-    width:100px;
+    width: 100px;
     height: 130px;
     left: 350px;
 }
+
 .leaf11 {
     position: absolute;
     content: '';
@@ -671,9 +685,7 @@ body {
     top: -90px;
 }
 
-.details {
-    
-}
+.details {}
 
 .details__inner {
     position: relative;
@@ -681,6 +693,7 @@ body {
     margin-bottom: 140px;
     justify-content: space-between;
 }
+
 .details__left {
     width: 546px;
     height: 330px;
@@ -688,6 +701,7 @@ body {
     border-radius: 27px;
     padding: 35px 120px 0px 40px;
 }
+
 .details__right {
     width: 546px;
     height: 295px;
@@ -695,6 +709,7 @@ body {
     border-radius: 27px;
     padding: 30px 30px 0px 50px;
 }
+
 .details__title {
     font-family: 'Nunito';
     font-style: normal;
@@ -704,6 +719,7 @@ body {
     color: #0D1288;
     margin-bottom: 20px;
 }
+
 .details__text {
     font-family: 'Manrope';
     font-style: normal;
@@ -712,6 +728,7 @@ body {
     line-height: 29px;
     color: #0D1288;
 }
+
 .details__btn {
     width: 264px;
     height: 63px;
@@ -727,8 +744,9 @@ body {
     font-size: 24px;
     line-height: 36px;
     color: #FFFFFF;
-    
+
 }
+
 .details__btn:hover {
     cursor: pointer;
     box-shadow: 2px 8px 38px 8px rgba(255, 255, 255, 0.8);
@@ -748,6 +766,7 @@ body {
     height: 120px;
     right: 70px;
 }
+
 .leaf66 {
     position: absolute;
     content: '';
@@ -757,6 +776,7 @@ body {
     right: 120px;
     bottom: 30px;
 }
+
 .leaf14 {
     position: absolute;
     content: '';
@@ -765,6 +785,7 @@ body {
     height: 155px;
     left: 430px;
 }
+
 .leaf18 {
     position: absolute;
     content: '';

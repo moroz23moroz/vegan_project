@@ -220,11 +220,13 @@ body {
 }
 
 .request__inner {
-    padding: 125px 0;
+    padding: 0;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .request__title {
+    padding-bottom: 45px;
     font-family: 'Nunito';
     font-style: italic;
     font-weight: 800;
@@ -240,9 +242,93 @@ body {
     background-image: url(../assets/images/leaves.png);
     width: 823px;
     height: 278px;
-    top: 0;
-    right: 0;
+    top: -200px;
+    right: -190px;
 }
+
+.request__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.request__column {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.request__column-first p:nth-child(2),
+.request__column-last p:nth-child(1) {
+    position: relative;
+    padding-left: 60px;
+}
+
+.request__column-first p:nth-child(2)::after,
+.request__column-last p:nth-child(1)::after {
+    position: absolute;
+    content: '';
+    width: 85px;
+    height: 102px;
+    background-image: url(../assets/images/request-leaf.png);
+    left: -50px;
+}
+
+.request__column-first p:nth-child(2)::after {
+    bottom: 80px;
+}
+
+.request__column-last p:nth-child(1)::after {
+    bottom: 20px;
+}
+
+.request__column-first p:nth-child(1) {
+    width: 450px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.request__column-last p:nth-child(2) {
+    position: relative;
+    padding: 30px 110px 60px 30px;
+    background: #DED3FC;
+    border-radius: 27px;
+}
+
+.request__column-last p:nth-child(1) {
+    width: 490px;
+}
+
+.request__btn {
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+    width: 264px;
+    height: 63px;
+    color: white;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    background: #4A2CFF;
+    border-color: transparent;
+    box-shadow: 0px 4px 19px 4px rgba(255, 255, 255, 0.36);
+    border-radius: 49px;
+}
+
+.request__column-last p:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/request-avatar.png);
+    width: 124px;
+    height: 124px;
+    left: -60px;
+    bottom: -70px;
+}
+
 
 .footer {
     font-family: 'Nunito';

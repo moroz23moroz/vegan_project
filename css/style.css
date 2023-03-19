@@ -186,9 +186,7 @@ body {
 }
 
 .wrapper-prod {
-    background-image: url(../assets/images/background-prod.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(180deg, #5400DC 2.65%, #9E3CFF 39.58%, #9E3CFF 54.69%, #5400DC 94.97%);
 }
 
 .main {
@@ -220,11 +218,13 @@ body {
 }
 
 .request__inner {
-    padding: 125px 0;
+    padding: 0;
     position: relative;
+    margin-bottom: 100px;
 }
 
 .request__title {
+    padding-bottom: 45px;
     font-family: 'Nunito';
     font-style: italic;
     font-weight: 800;
@@ -240,9 +240,102 @@ body {
     background-image: url(../assets/images/leaves.png);
     width: 823px;
     height: 278px;
-    top: 0;
-    right: 0;
+    top: -200px;
+    right: -190px;
 }
+
+.request__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.request__column {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.request__column-last {
+    align-items: end;
+}
+
+.request__column-first p:nth-child(2) {
+    position: relative;
+    padding-left: 60px;
+}
+
+.request__column-last p:nth-child(1) {
+    position: relative;
+    padding-left: 30px;
+}
+
+.request__column-first p:nth-child(2)::after,
+.request__column-last p:nth-child(1)::after {
+    position: absolute;
+    content: '';
+    width: 85px;
+    height: 102px;
+    background-image: url(../assets/images/request-leaf.png);
+}
+
+.request__column-first p:nth-child(2)::after {
+    bottom: 80px;
+    left: -50px;
+}
+
+.request__column-last p:nth-child(1)::after {
+    bottom: 20px;
+    left: -80px;
+}
+
+.request__column-first p:nth-child(1) {
+    width: 450px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+.request__column-last p:nth-child(2) {
+    position: relative;
+    padding: 30px 15px 65px 30px;
+    background: #DED3FC;
+    border-radius: 27px;
+}
+
+.request__column-last p {
+    width: 440px;
+}
+
+.request__btn {
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    width: 264px;
+    height: 63px;
+    color: white;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    background: #4A2CFF;
+    border-color: transparent;
+    box-shadow: 0px 4px 19px 4px rgba(255, 255, 255, 0.36);
+    border-radius: 49px;
+}
+
+.request__column-last p:nth-child(2)::before {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/request-avatar.png);
+    width: 124px;
+    height: 124px;
+    left: -45px;
+    bottom: -55px;
+}
+
 
 .footer {
     font-family: 'Nunito';
@@ -744,8 +837,8 @@ body {
     font-weight: 800;
     font-size: 39px;
     line-height: 53px;
-    padding-bottom: 25px;
-    margin-bottom: 85px;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
     border-bottom: 4px solid white;
 }
 
@@ -788,9 +881,12 @@ body {
 }
 
 .milk,
+.prods,
+.herb,
 .alpro,
 .diferent,
 .leaf,
+.easy,
 .energy {
     position: relative;
 }
@@ -805,6 +901,16 @@ body {
     top: -110px;
 }
 
+.prods::after {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/prods.png);
+    width: 296.04px;
+    height: 631px;
+    right: -290px;
+    bottom: 0;
+}
+
 .milk::before {
     position: absolute;
     content: '';
@@ -813,6 +919,28 @@ body {
     height: 385.45px;
     right: -324px;
     bottom: -310px;
+}
+
+.herb::after {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/leaves_3.png);
+    width: 916.84px;
+    height: 692.89px;
+    right: -392px;
+    bottom: -270px;
+    z-index: 10;
+}
+
+.herb::before {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/HiBalls.png);
+    width: 231px;
+    height: 322px;
+    right: -290px;
+    bottom: 0;
+    z-index: 20;
 }
 
 .alpro::before {
@@ -833,6 +961,16 @@ body {
     height: 631px;
     bottom: -239px;
     right: -400px;
+}
+
+.easy::after {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/easy-base.png);
+    width: 390px;
+    height: 302px;
+    bottom: 100px;
+    right: -350px;
 }
 
 .energy::after {

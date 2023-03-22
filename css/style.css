@@ -201,9 +201,20 @@ body {
 .promo__container,
 .about__container,
 .products__container {
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    max-width: calc(345px + (1200 - 345) * ((100vw - 375px) / (1440 - 375)));
     margin: 0 auto;
     padding: 0 15px;
+}
+
+@media (max-width: 375px) {
+
+    .container,
+    .promo__container,
+    .about__container,
+    .products__container {
+        padding: 0 10px;
+    }
 }
 
 .header__inner {
@@ -215,6 +226,23 @@ body {
 
 .header__logo {
     padding-right: 35px;
+}
+
+@media (max-width: 390px) {
+    .header__inner {
+        padding-top: 30px;
+        align-items: end;
+    }
+
+    .header__logo img {
+        height: 41px;
+        width: 41px;
+    }
+
+    .header__menu {
+        width: 44px;
+        height: 32px;
+    }
 }
 
 .request__inner {
@@ -334,6 +362,56 @@ body {
     height: 124px;
     left: -45px;
     bottom: -55px;
+}
+
+.reviews {
+    margin-bottom: 190px;
+}
+
+.reviews__title {
+    margin-bottom: 70px;
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.reviews__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 37px 15px 50px 35px;
+    background: #FFFFFF;
+    border-radius: 50px 50px 50px 0px;
+}
+
+.reviews__text p:nth-child(2) {
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 33px;
+    color: #0D1288;
+}
+
+.reviews__author {
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.reviews__author:after {
+    position: absolute;
+    content: '';
+    background-image: url(../assets/images/reviews-leaf.svg);
+    width: 208px;
+    height: 204.13px;
+    bottom: -110px;
+    right: 50px;
+
 }
 
 

@@ -185,6 +185,10 @@ body {
     min-height: 100%;
 }
 
+.wrapper {
+    position: relative;
+}
+
 .wrapper-prod {
     background: linear-gradient(180deg, #5400DC 2.65%, #9E3CFF 39.58%, #9E3CFF 54.69%, #5400DC 94.97%);
 }
@@ -244,6 +248,42 @@ body {
         height: 32px;
     }
 }
+
+.header__mobile {
+    position: absolute;
+    height: auto;
+    width: 320px;
+    right: 0;
+    z-index: 99;
+    padding: 50px;
+    background-color: white;
+    background-image: url(../assets/images/menu-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom bottom;
+    border-radius: 15px;
+    box-shadow: 2px 2px 62px rgba(255, 255, 255, 0.15);
+}
+
+.header__mobile.action {
+    top: 0;
+}
+
+.header__mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.header__mobile-link {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #0D1288;
+}
+
 
 .request__inner {
     padding: 0;
@@ -512,12 +552,14 @@ body {
     box-shadow: 0px 4px 19px 4px rgba(255, 255, 255, 0.4);
     margin: 25px 0;
 }
+
 .promo__btn:hover {
     cursor: pointer;
     box-shadow: 2px 8px 38px 8px rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease;
     transform: scale(1.05);
 }
+
 .promo__btn-text {
     font-family: Roboto;
     font-size: 24px;
@@ -530,6 +572,7 @@ body {
 .promo__leafs {
     position: relative;
 }
+
 .leaf16 {
     position: absolute;
     content: '';
@@ -538,6 +581,7 @@ body {
     height: 200px;
     top: -50px;
 }
+
 .leaf68 {
     position: absolute;
     content: '';
@@ -547,6 +591,7 @@ body {
     top: 120px;
     left: -100px;
 }
+
 .leaf65 {
     position: absolute;
     content: '';
@@ -555,6 +600,7 @@ body {
     height: 125px;
     top: 350px;
 }
+
 .leaf12 {
     position: absolute;
     content: '';
@@ -568,6 +614,7 @@ body {
 .promo__img {
     position: relative;
 }
+
 .promo-jar {
     position: absolute;
     content: '';
@@ -578,6 +625,7 @@ body {
     left: 280px;
     top: 70px;
 }
+
 .promo-flower {
     margin-right: -150px;
 }
@@ -620,6 +668,7 @@ body {
 .about__count {
     width: 45%;
 }
+
 .about__count-info {
     width: 100%;
 }
@@ -659,6 +708,7 @@ body {
 .about__img {
     position: relative;
 }
+
 .leaf61 {
     position: absolute;
     content: '';
@@ -668,6 +718,7 @@ body {
     left: 90px;
     bottom: 5px;
 }
+
 .ball53 {
     position: absolute;
     content: '';
@@ -677,6 +728,7 @@ body {
     left: 290px;
     bottom: 130px;
 }
+
 .ball51 {
     position: absolute;
     content: '';
@@ -687,6 +739,7 @@ body {
     bottom: 35px;
     z-index: 2;
 }
+
 .fl72 {
     position: absolute;
     content: '';
@@ -706,6 +759,7 @@ body {
     border: 1px solid #DED3FC;
     border-radius: 29px;
 }
+
 .about__application-text {
     font-family: 'Nunito';
     font-style: normal;
@@ -776,6 +830,7 @@ body {
     color: #0D1288;
     margin-bottom: 20px;
 }
+
 .details__text {
     font-family: 'Manrope';
     font-style: normal;
@@ -801,6 +856,7 @@ body {
     line-height: 36px;
     color: #FFFFFF;
 }
+
 .details__btn:hover {
     cursor: pointer;
     box-shadow: 2px 8px 38px 8px rgba(255, 255, 255, 0.8);
@@ -811,6 +867,7 @@ body {
 .details__leafs {
     position: relative;
 }
+
 .leaf13 {
     position: absolute;
     content: '';
@@ -819,6 +876,7 @@ body {
     height: 120px;
     right: 70px;
 }
+
 .leaf66 {
     position: absolute;
     content: '';
@@ -828,6 +886,7 @@ body {
     right: 120px;
     bottom: 30px;
 }
+
 .leaf14 {
     position: absolute;
     content: '';
@@ -836,6 +895,7 @@ body {
     height: 155px;
     left: 430px;
 }
+
 .leaf18 {
     position: absolute;
     content: '';
@@ -848,8 +908,9 @@ body {
 .attention__inner {
     display: flex;
     position: relative;
-    margin-bottom: 140px; 
+    margin-bottom: 140px;
 }
+
 .attention__info {
     display: flex;
     font-family: 'Nunito';
@@ -860,9 +921,10 @@ body {
     color: #FFFFFF;
     padding: 30px 80px 30px 700px;
 }
+
 .text-link {
     color: #FFFFFF;
-    text-decoration: underline;  
+    text-decoration: underline;
 }
 
 .attention__info::before {
@@ -887,6 +949,7 @@ body {
 .attention__leafs {
     position: relative;
 }
+
 .leaf610 {
     position: absolute;
     content: "";
@@ -896,6 +959,7 @@ body {
     top: 300px;
     left: 500px;
 }
+
 .leaf611 {
     position: absolute;
     content: "";

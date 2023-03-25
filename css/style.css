@@ -846,13 +846,12 @@ body {
 }
 
 .attention__inner {
+    display: flex;
     position: relative;
     margin-bottom: 140px; 
-    border: 2px solid #FFFFFF;
-    border-left: 80px solid transparent;
-    border-radius: 34px;
 }
 .attention__info {
+    display: flex;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 800;
@@ -865,17 +864,28 @@ body {
     color: #FFFFFF;
     text-decoration: underline;  
 }
-.attention__leafs {
-    position: relative;
-}
-.pic2 {
+
+.attention__info::before {
     position: absolute;
     content: "";
     background-image: url(../assets/images/pic2.png);
     width: 440px;
     height: 460px;
     top: -100px;
-    left: -100px;
+    left: 80px;
+}
+.attention__info::after {
+    position: absolute;
+    content: "";
+    background-image: url(../assets/images/frame.png);
+    width: 1070px;
+    height: 269px;
+    top: 5px;
+    left: 590px;
+}
+
+.attention__leafs {
+    position: relative;
 }
 .leaf610 {
     position: absolute;

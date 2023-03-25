@@ -202,6 +202,7 @@ body {
 }
 
 .container,
+.container__attention,
 .promo__container,
 .about__container,
 .products__container {
@@ -914,6 +915,27 @@ body {
     position: relative;
     justify-content: end;
     margin-bottom: 200px;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width:1220px) and (max-width:1419px) {
+
+    .container__attention {
+        /* max-width: 90vw; */
+        max-width: calc(92vw + (98 - 92) * ((100vw - 1205px) / (1419 - 1205)));
+    }
+
+    .attention__inner {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:1291px) {
+    .attention__inner::after {
+        display: none;
+    }
 }
 
 .attention__info {
@@ -926,6 +948,36 @@ body {
     color: #FFFFFF;
     padding: 25px;
     width: 822px;
+}
+
+@media (max-width:1219px) {
+    .attention__info {
+        width: 60%;
+    }
+}
+
+@media (max-width:999px) {
+
+    .attention__inner::after,
+    .attention__inner::before {
+        display: none;
+    }
+
+    .attention__info {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 70px;
+    }
+
+    .attention__info::after {
+        position: absolute;
+        content: '';
+        background-image: url(../assets/images/attention-low.png);
+        bottom: -300px;
+        width: 490px;
+        height: 500px;
+    }
 }
 
 .text-link {
@@ -952,6 +1004,7 @@ body {
     top: 5px;
     right: 0;
 }
+
 
 /* .attention__leafs {
     position: relative;

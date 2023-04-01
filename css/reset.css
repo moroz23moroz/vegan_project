@@ -186,3 +186,8 @@ input,
 select {
     vertical-align: middle;
 }
+
+ul,
+ol {
+    list-style: none;
+}

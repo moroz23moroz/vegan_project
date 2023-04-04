@@ -12,15 +12,16 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="#header">
                         <img src="assets/images/Logo.svg" alt="logo">
                     </a>
                     <img class="header__menu" src="assets/images/burger.svg" alt="menu">
                 </div>
                 <div class="header__mobile">
+                    <span class="menu__close">X</span>
                     <nav class="header__mobile-menu">
                         <ul class="header__mobile-list">
                             <li class="header__mobile-item">
@@ -34,8 +35,8 @@
                                 </a>
                             </li>
                             <li class="header__mobile-item">
-                                <a class="header__mobile-link menu-link" href="#">
-                                    Продукты обогащеные В12
+                                <a class="header__mobile-link" href="products.html#b12">
+                                    Продукты, обогащеные В12
                                 </a>
                             </li>
                             <li class="header__mobile-item">
@@ -245,7 +246,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <a href="#" class="footer__logo">
+                    <a href="#header" class="footer__logo">
                         <img src="assets/images/footer-logo.svg" alt="vegan__logo">
                     </a>
                     <div class="footer__main">

@@ -12,15 +12,47 @@
 
 <body>
     <div class="wrapper-prod">
-        <header class="header">
+        <header class="header" id="b12">
             <div class="container">
                 <div class="header__inner">
-                    <a class="header__logo" href="#">
+                    <a class="header__logo" href="index.html#header">
                         <img src="assets/images/Logo.svg" alt="logo">
                     </a>
-                    <a class="header__menu" href="#">
+                    <div class="header__menu-img">
                         <img src="assets/images/burger.svg" alt="menu">
-                    </a>
+                    </div>
+                </div>
+                <div class="header__mobile">
+                    <span class="menu__close">X</span>
+                    <nav class="header__mobile-menu">
+                        <ul class="header__mobile-list">
+                            <li class="header__mobile-item">
+                                <a class="header__mobile-link menu-link" href="#about">
+                                    Условия участия
+                                </a>
+                            </li>
+                            <li class="header__mobile-item">
+                                <a class="header__mobile-link menu-link" href="#">
+                                    КАК ПОДАТЬ ЗАЯВКУ
+                                </a>
+                            </li>
+                            <li class="header__mobile-item">
+                                <a class="header__mobile-link menu-link" href="#">
+                                    Продукты, обогащеные В12
+                                </a>
+                            </li>
+                            <li class="header__mobile-item">
+                                <a class="header__mobile-link menu-link" href="#">
+                                    Финансирование
+                                </a>
+                            </li>
+                            <li class="header__mobile-item">
+                                <a class="header__mobile-link menu-link" href="#">
+                                    ОТЗЫВЫ
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -976,7 +1008,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <a href="#" class="footer__logo">
+                    <a href="index.html#header" class="footer__logo">
                         <img src="assets/images/footer-logo.svg" alt="vegan__logo">
                     </a>
                     <div class="footer__main">
@@ -998,6 +1030,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/prod.js" defer></script>
 </body>
 
 </html>

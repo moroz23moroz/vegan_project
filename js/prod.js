@@ -19,16 +19,17 @@ const smoothScroll = () => {
 
 smoothScroll()
 
-const openMenu = () => {
-    const burger = document.querySelector('.header__menu')
+const openProdMenu = () => {
+    const img = document.querySelector('.header__menu-img')
 
-    burger.addEventListener('click', (event) => {
+    img.addEventListener('click', (event) => {
         const mobile = document.querySelector('.header__mobile')
         mobile.classList.toggle("action")
     })
 }
 
-openMenu()
+openProdMenu()
+
 
 const closeMenu = () => {
     const close = document.querySelector('.menu__close')
@@ -40,3 +41,16 @@ const closeMenu = () => {
 }
 
 closeMenu()
+
+const openSpoiler = () => {
+    const tabs = document.querySelectorAll('.products__link')
+
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', (event) => {
+            const hidden = document.querySelector('.products__sub')
+            hidden.classList.toggle("hidden")
+        })
+    })
+}
+
+openSpoiler()

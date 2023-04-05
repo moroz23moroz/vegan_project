@@ -1573,6 +1573,10 @@ body {
         padding-top: 10px;
     }
 
+    .header__main {
+        padding-top: 35px;
+    }
+
     .header__logo img {
         height: 41px;
         width: 41px;

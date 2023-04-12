@@ -422,7 +422,7 @@ body {
     font-size: 24px;
     line-height: 36px;
     background: #4A2CFF;
-    border-color: transparent;
+    border: 1px solid #4A2CFF;
     box-shadow: 0px 4px 19px 4px rgba(255, 255, 255, 0.36);
     border-radius: 49px;
 }
@@ -441,6 +441,11 @@ body {
     margin-bottom: 190px;
 }
 
+.reviews__inner {
+    display: flex;
+    flex-direction: column;
+}
+
 .reviews__title {
     margin-bottom: 70px;
     font-family: 'Nunito';
@@ -452,13 +457,20 @@ body {
     color: #FFFFFF;
 }
 
+.swiper {
+    width: 100%;
+    height: 360px;
+}
+
 .reviews__text {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 37px 15px 50px 35px;
-    background: #FFFFFF;
+    padding: 37px 4px 40px 22px;
     border-radius: 50px 50px 50px 0px;
+    width: 80%;
+    height: auto;
+    background: #FFFFFF;
 }
 
 .reviews__text p:nth-child(2) {
@@ -476,6 +488,11 @@ body {
     position: relative;
 }
 
+.reviews__slider {
+    position: relative;
+    padding: 0 100px;
+}
+
 .reviews__author:after {
     position: absolute;
     content: '';
@@ -485,6 +502,20 @@ body {
     bottom: -110px;
     right: 50px;
 
+}
+
+.reviews__btn {
+    position: absolute;
+    cursor: pointer;
+    bottom: 40%;
+}
+
+.swiper-button-left {
+    left: -50px;
+}
+
+.swiper-button-right {
+    right: -100px;
 }
 
 
@@ -973,7 +1004,8 @@ body {
     color: #FFFFFF;
 }
 
-.details__btn:hover {
+.details__btn:hover,
+.my-btn:hover {
     cursor: pointer;
     box-shadow: 2px 8px 38px 8px rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease;

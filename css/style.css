@@ -248,7 +248,7 @@ body {
     padding-top: 55px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 
 .header__logo {
@@ -264,7 +264,9 @@ body {
     display: flex;
     align-items: center;
     width: 75px;
-    height: 75px;
+    height: 95px;
+    display: flex;
+    align-items: start;
 }
 
 .header__mobile {

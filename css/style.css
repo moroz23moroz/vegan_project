@@ -1593,6 +1593,10 @@ body {
     flex: 1;
 }
 
+.products__sub-desc {
+    font-size: 18px;
+}
+
 .products__sub-value {
     font-weight: 900;
 

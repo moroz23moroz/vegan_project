@@ -44,11 +44,23 @@ closeMenu()
 
 const openSpoiler = () => {
     const tabs = document.querySelectorAll('.products__link')
+    const hiddens = document.querySelectorAll('.products__sub')
 
-    tabs.forEach((tab) => {
-        tab.addEventListener('click', (event) => {
-            const hidden = document.querySelector('.products__sub')
-            hidden.classList.toggle("hidden")
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            if (tab.classList.contains('products__link-active')) {
+                tab.classList.remove('products__link-active');
+                hiddens[index].classList.add('hidden');
+            } else {
+                hiddens.forEach((hidden) => {
+                    hidden.classList.add('hidden');
+                });
+                tabs.forEach((tab) => {
+                    tab.classList.remove('products__link-active');
+                });
+                hiddens[index].classList.remove('hidden');
+                tab.classList.add('products__link-active');
+            }
         })
     })
 }

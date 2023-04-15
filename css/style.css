@@ -652,13 +652,11 @@ body {
     padding-bottom: 120px;
     gap: 30px;
 }
-
 .promo__content {
     color: #FFFEFE;
     text-align: left;
     letter-spacing: 0em;
 }
-
 .promo__title {
     color: #FFFFFF;
     font-family: 'Nunito';
@@ -667,7 +665,6 @@ body {
     line-height: 47px;
     margin-bottom: 25px;
 }
-
 .promo__subtitle {
     font-family: Nunito;
     font-size: 30px;
@@ -675,7 +672,6 @@ body {
     line-height: 41px;
     margin-bottom: 27px;
 }
-
 .promo__text,
 .first,
 .second {
@@ -696,14 +692,12 @@ body {
     box-shadow: 0px 4px 19px 4px rgba(255, 255, 255, 0.4);
     margin: 25px 0;
 }
-
 .promo__btn:hover {
     cursor: pointer;
     box-shadow: 2px 8px 38px 8px rgba(255, 255, 255, 0.8);
     transition: all 0.3s ease;
     transform: scale(1.05);
 }
-
 .promo__btn-text {
     font-family: Roboto;
     font-size: 24px;
@@ -716,7 +710,6 @@ body {
 .promo__leafs {
     position: relative;
 }
-
 .leaf16 {
     position: absolute;
     content: '';
@@ -726,7 +719,6 @@ body {
     top: -70px;
     right: 180px;
 }
-
 .leaf68 {
     position: absolute;
     content: '';
@@ -780,7 +772,7 @@ body {
     right: -200px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
     .leaf16 {
         top: -70px;
         right: 10px;
@@ -814,17 +806,21 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .promo__inner {
         margin-bottom: 50px;
     }
-    .promo-jar,
+    .second,
     .leaf12 {
         display: none;
     }
     .promo-flower {
         top: 300px;
         right: -10px;
+    }
+    .promo-jar {
+        top: 320px;
+        left: -230px;
     }
     .leaf16 {
         top: -50px;
@@ -843,7 +839,7 @@ body {
         content: '';
         background-image: url(../assets/images/6-3.png);
         width: 60px;
-        height: 50px;
+        height: 55px;
         top: 550px;
         right: 500px;
     }
@@ -857,19 +853,56 @@ body {
         right: 300px;
     }
 }
-
-@media (max-width: 425px) {
+@media (max-width: 670px) {
+    .promo-jar {
+        display: none;
+    }
+}
+@media (max-width: 470px) {
     .promo__inner {
         flex-direction: column;
         margin-bottom: 50px;
     }
-    .promo__leafs,
-    .promo-jar {
-        display: none;
+    .promo__title {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 12px;
+    }
+    .promo__subtitle {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 25px;
+    }
+    .first {
+        max-width: 300px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .promo__btn {
+        display: flex;
+        margin: 15px auto;
+    }
+    .promo__btn-text {
+        display: flex;
+        margin: auto;
+        
     }
     .promo-flower {
-        top: 300px;
-        right: -10px;
+        top: -215px;
+        right: -30px;
+    }
+    .leaf16,
+    .leaf68,
+    .leaf65 {
+        display: none;
+    }
+    .leaf63 {
+        top: 0px;
+        right: 350px;
+    }
+    .leaf62 {
+        top: 80px;
+        right: 300px;
     }
 }
 .about__title {

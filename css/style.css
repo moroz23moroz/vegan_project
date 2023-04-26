@@ -775,15 +775,15 @@ body {
         top: -70px;
         right: 10px;
     }
-        .leaf68 {
+    .leaf68 {
         top: 90px;
         right: 120px;
     }
-        .leaf65 {
+    .leaf65 {
         top: 280px;
         right: 90px;
     }
-        .leaf12 {
+    .leaf12 {
         top: 420px;
         right: 50px;
     }
@@ -911,6 +911,9 @@ body {
         line-height: 30px;
         margin-bottom: 20px;
     }
+    .first {
+        font-weight: 500;
+    }
 }
 
 .about__title {
@@ -926,7 +929,6 @@ body {
 
 .about__inner {
     display: flex;
-    justify-content: space-between;
     padding-top: 0;
     padding-bottom: 136px;
     gap: 70px;
@@ -940,6 +942,7 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 52px 32px;
+    align-items: center;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -1050,6 +1053,45 @@ body {
     font-size: 26px;
     line-height: 132.7%;
     color: #4A2CFF;
+}
+
+@media (max-width: 1200px) {
+    .about__inner {
+        gap: 40px;
+    }
+    .about__points {
+        grid-gap: 42px 22px;
+        font-size: 28px;
+    }
+    .leaf61 {
+        left: 50px;
+        bottom: -10px;
+    }
+    .ball53 {
+        left: 250px;
+    }
+    .ball51 {
+        left: 380px;
+    }
+    .fl72 {
+        left: 400px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .leaf61 {
+        left: 20px;
+        bottom: -10px;
+    }
+    .ball53 {
+        left: 220px;
+    }
+    .ball51 {
+        left: 345px;
+    }
+    .fl72 {
+        left: 360px;
+    }
 }
 
 /* .about__leafs {

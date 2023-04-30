@@ -208,6 +208,7 @@ body {
 .container__mobile,
 .promo__container,
 .about__container,
+.container__request,
 .products__container {
     max-width: calc(345px + (1200 - 345) * ((100vw - 375px) / (1440 - 375)));
     margin: 0 auto;
@@ -225,6 +226,12 @@ body {
     .promo__container,
     .about__container,
     .products__container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width:1300px) {
+    .container__request {
         max-width: 1200px;
     }
 }
@@ -339,6 +346,12 @@ body {
     color: #0D1288;
 }
 
+@media (max-width:1088px) {
+    .request__title {
+        text-align: center;
+    }
+}
+
 .request__title::before {
     position: absolute;
     content: '';
@@ -355,6 +368,15 @@ body {
     gap: 60px;
 }
 
+@media (max-width:1088px) {
+    .request__info {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        padding: 0 150px;
+    }
+}
+
 .request__column {
     width: 550px;
     display: flex;
@@ -364,6 +386,12 @@ body {
 
 .request__column-last {
     align-items: end;
+}
+
+@media (max-width:1088px) {
+    .request__column-last {
+        align-items: start;
+    }
 }
 
 .request__column-first p:nth-child(2) {
@@ -414,6 +442,30 @@ body {
     width: 440px;
 }
 
+@media (max-width:1088px) {
+
+    .request__column,
+    .request__column p,
+    .request__column-first p:nth-child(1) {
+        width: 95%;
+    }
+
+}
+
+@media (max-width:990px) {
+    .request__info {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        padding: 0;
+        margin: 0 50px;
+    }
+
+    .request__column-last p {
+        width: 100%;
+    }
+}
+
 .request__btn {
     position: absolute;
     right: 50px;
@@ -429,6 +481,13 @@ body {
     border: 1px solid #4A2CFF;
     box-shadow: 0px 4px 19px 4px rgba(255, 255, 255, 0.36);
     border-radius: 49px;
+
+}
+
+@media (max-width:1115px) {
+    .request__btn {
+        right: 0;
+    }
 }
 
 .request__column-last p:nth-child(2)::before {
@@ -1347,6 +1406,7 @@ body {
         position: absolute;
         content: '';
         background-image: url(../assets/images/attention-low.png);
+        background-repeat: no-repeat;
         bottom: -300px;
         width: 490px;
         height: 500px;

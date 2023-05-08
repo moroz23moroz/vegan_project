@@ -1451,7 +1451,8 @@ body {
 }
 
 .details__left {
-    width: 546px;
+    width: 51%;
+    max-width: 546px;
     max-height: 330px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 27px;
@@ -1459,7 +1460,8 @@ body {
 }
 
 .details__right {
-    width: 546px;
+    width: 47%;
+    max-width: 546px;
     max-height: 300px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 27px;
@@ -1550,12 +1552,10 @@ body {
 
 @media (max-width: 1200px) {
     .details__left {
-        width: 51%;
         padding-top: 20px;
         padding-right: 80px;
     }
     .details__right {
-        width: 47%;
         padding-top: 20px;
     }
     .details__title {

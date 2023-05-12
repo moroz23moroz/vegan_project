@@ -1033,8 +1033,9 @@ body {
     gap: 70px;
 }
 
-.about__content {
-    width: 47%;
+.about__content, 
+.about__count {
+    width: 50%;
 }
 
 .about__points {
@@ -1050,8 +1051,8 @@ body {
     color: #0D1288;
 }
 
-.about__count {
-    width: 45%;
+.about__points-img-Small {
+    display: none;
 }
 
 .about__count-info {
@@ -1158,46 +1159,254 @@ body {
     .about__inner {
         gap: 40px;
     }
-
     .about__points {
         grid-gap: 42px 22px;
         font-size: 28px;
     }
-
     .leaf61 {
         left: 50px;
         bottom: -10px;
     }
-
     .ball53 {
         left: 250px;
     }
-
     .ball51 {
         left: 380px;
     }
-
     .fl72 {
         left: 400px;
     }
 }
 
 @media (max-width: 1030px) {
+    .about__title {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+    .about__points {
+        grid-gap: 38px 20px;
+        font-size: 26px;
+    }
+    .about__application-text {
+        font-size: 24px;
+    }
     .leaf61 {
         left: 20px;
         bottom: -10px;
     }
-
     .ball53 {
         left: 220px;
     }
-
     .ball51 {
         left: 345px;
     }
-
     .fl72 {
         left: 360px;
+    }
+}
+
+@media (max-width: 940px) {
+    .info {
+        font-size: 36px;
+    }
+    .about__points {
+        font-size: 22px;
+    }
+    .about__count-sum {
+        font-size: 200px;
+    }
+    .about__application-text {
+        font-size: 22px;
+    }
+    .fl72, 
+    .ball51,
+    .leaf61 {
+        display: none;
+    }
+    .fl73 {
+        position: absolute;
+        content: '';
+        background-image: url(../assets/images/fl73.png);
+        width: 80px;
+        height: 120px;
+        left: 340px;
+        bottom: 60px;
+        z-index: 1;
+    }
+    .ball54 {
+        position: absolute;
+        content: '';
+        background-image: url(../assets/images/ball54.png);
+        width: 40px;
+        height: 40px;
+        left: 330px;
+        bottom: 40px;
+        z-index: 2;
+    }
+    .leaf62 {
+        position: absolute;
+        content: '';
+        background-image: url(../assets/images/leaf62.png);
+        width: 60px;
+        height: 60px;
+        left: 40px;
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 854px) {
+    .leaf62 {
+        left: 30px;
+        top: -70px;
+    }
+    .ball53 {
+        left: 200px;
+    }
+    .ball54 {
+        left: 300px;
+    }
+    .fl73 {
+        left: 310px;
+    }
+    .about__application-text {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about__inner {
+        flex-direction: column;
+    }
+    .about__content, 
+    .about__count {
+        width: 100%;
+    }
+    .about__count-info {
+        margin-top: 50px;
+    }
+    .leaf62 {
+        left: 160px;
+    }
+    .ball53 {
+        left: 320px;
+    }
+    .ball54 {
+        left: 450px;
+    }
+    .fl73 {
+        left: 460px;
+    }
+}
+
+@media (max-width: 596px) {
+    .about__points-img-Big {
+        display: none;
+    }
+    .about__points-img-Small {
+        display: block;
+    }
+    .about__count-sum {
+        font-size: 165px;
+    }
+    .leaf62 {
+        left: 100px;
+    }
+    .ball53 {
+        left: 280px;
+    }
+    .ball54 {
+        left: 380px;
+    }
+    .fl73 {
+        left: 380px;
+    }
+}
+
+@media (max-width: 510px) {
+    .about__title {
+        text-align: center;
+        font-size: 34px;
+        line-height: 38px;
+        margin: 30px auto;
+    }
+    .about__points {
+        font-size: 20px;
+    }
+    .leaf62 {
+        left: 80px;
+    }
+    .ball53 {
+        left: 220px;
+        bottom: 90px;
+    }
+    .ball54 {
+        left: 330px;
+    }
+    .fl73 {
+        left: 340px;
+    }
+}
+
+@media (max-width: 440px) {
+    .about__title {
+        font-size: 28px;
+        line-height: 32px;
+        margin: 30px auto;
+    }
+    .about__count-sum{
+        text-align: left;
+    }
+    .leaf62 {
+        left: 30px;
+    }
+    .ball53 {
+        left: 160px;
+    }
+    .ball54 {
+        left: 270px;
+    }
+    .fl73 {
+        left: 280px;
+    }
+    .about__application-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about__count-sum {
+        font-size: 150px;
+    }
+    .leaf62 {
+        left: 20px;
+    }
+    .ball53 {
+        left: 140px;
+    }
+    .ball54 {
+        left: 240px;
+    }
+    .fl73 {
+        left: 230px;
+        bottom: 50px;
+        transform: rotate(-30deg);
+    }
+}
+
+@media (max-width: 320px) {
+    .about__title {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .leaf62 {
+        left: 20px;
+    }
+    .ball53 {
+        left: 140px;
+    }
+    .fl73 {
+        left: 210px;
     }
 }
 
@@ -1242,16 +1451,18 @@ body {
 }
 
 .details__left {
-    width: 546px;
-    height: 330px;
+    width: 51%;
+    max-width: 546px;
+    max-height: 330px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 27px;
     padding: 35px 120px 0px 40px;
 }
 
 .details__right {
-    width: 546px;
-    height: 295px;
+    width: 47%;
+    max-width: 546px;
+    max-height: 300px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 27px;
     padding: 30px 30px 0px 50px;
@@ -1285,6 +1496,7 @@ body {
     border: 1px solid #9100B5;
     margin-top: 20px;
     margin-left: 180px;
+    margin-bottom: -32px;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 700;
@@ -1304,7 +1516,6 @@ body {
 .details__leafs {
     position: relative;
 }
-
 .leaf13 {
     position: absolute;
     content: '';
@@ -1313,17 +1524,15 @@ body {
     height: 120px;
     right: 70px;
 }
-
 .leaf66 {
     position: absolute;
     content: '';
     background-image: url(../assets/images/66.png);
-    width: 100px;
-    height: 125px;
+    width: 110px;
+    height: 132px;
     right: 120px;
     bottom: 30px;
 }
-
 .leaf14 {
     position: absolute;
     content: '';
@@ -1332,7 +1541,6 @@ body {
     height: 155px;
     left: 430px;
 }
-
 .leaf18 {
     position: absolute;
     content: '';
@@ -1340,6 +1548,157 @@ body {
     width: 200px;
     height: 170px;
     top: 270px;
+}
+
+@media (max-width: 1200px) {
+    .details__left {
+        padding-top: 20px;
+        padding-right: 80px;
+    }
+    .details__right {
+        padding-top: 20px;
+    }
+    .details__title {
+        font-size: 34px;
+        line-height: 46px;
+        margin-bottom: 10px;
+        
+    }
+    .details__text {
+        line-height: 26px;
+    }
+    .leaf14 {
+        top: 10px;
+        left: 350px;
+    }
+    .leaf18 {
+        top: 250px;
+    }
+} 
+
+@media (max-width: 1030px) {
+    .details__inner {
+        flex-direction: column;
+    }
+    .details__left {
+        width: 70%;
+        padding-right: 100px;
+        margin-bottom: 50px;
+    }
+    .details__right {
+        width: 60%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .leaf66 {
+        right: 280px;
+        bottom: 80px;
+    }
+    .leaf13 {
+        right: 260px;
+        bottom: 230px;
+    }
+    .leaf14 {
+        left: 650px;
+    }
+    .leaf18 {
+        top: 10px;
+    }
+}
+
+@media (max-width: 890px) {
+    .details__inner {
+        margin-bottom: 40px;
+    }
+    .details__left,
+    .details__right {
+        width: 90%;
+        margin: 40px auto;
+    }
+    .details__btn {
+        display: block;
+        margin: 20px auto -30px;
+    }
+    .leaf13 {
+        right: 60px;
+    }
+    .leaf66 {
+        right: 80px;
+    }
+    .leaf14 {
+        left: 450px;
+    }
+    .leaf18 {
+        top: 300px;
+    }
+}
+
+@media (max-width: 694px) {
+    .details__left,
+    .details__right {
+        padding: 20px;
+    }
+    .leaf14 {
+        left: 350px;
+    }
+}
+
+@media (max-width: 566px) {
+    .details__title {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .details__text {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .leaf13 {
+        right: -30px;
+        bottom: 250px;
+    }
+    .leaf66 {
+        right: 20px;
+    }
+    .leaf14 {
+        left: 270px;
+    }
+}
+
+@media (max-width: 425px) {
+    .details__left,
+    .details__right {
+        width: 100%;
+        padding: 15px;
+    }
+    .details__title {
+        font-size: 26px;
+        line-height: 33px;
+    }
+    .details__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 375px) {
+    .leaf14 {
+        left: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    .details__left,
+    .details__right {
+        padding: 10px;
+    }
+    .details__title {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .details__text {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 .attention__inner {

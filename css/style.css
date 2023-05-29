@@ -236,6 +236,13 @@ body {
     }
 }
 
+@media (max-width: 1165px) {
+
+    .container__request {
+        padding: 0;
+    }
+}
+
 @media (max-width:485px) {
     .products__container {
         padding: 0 10px;
@@ -260,7 +267,7 @@ body {
 }
 
 .header__logo {
-    padding-right: 35px;
+    padding: 10px 35px 10px 0;
     align-self: self-start;
 }
 
@@ -352,6 +359,13 @@ body {
     }
 }
 
+@media (max-width:788px) {
+    .request__title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
 .request__title::before {
     position: absolute;
     content: '';
@@ -399,9 +413,21 @@ body {
     padding-left: 60px;
 }
 
+@media (max-width:1130px) {
+    .request__column-first p:nth-child(2) {
+        padding-left: 0;
+    }
+}
+
 .request__column-last p:nth-child(1) {
     position: relative;
     padding-left: 30px;
+}
+
+@media (max-width:1130px) {
+    .request__column-last p:nth-child(1) {
+        padding-left: 0;
+    }
 }
 
 .request__column-first p:nth-child(2)::after,
@@ -413,6 +439,11 @@ body {
     background-image: url(../assets/images/request-leaf.png);
 }
 
+.request__column-first p:nth-child(2)::before,
+    .request__column-last p:nth-child(1)::before {
+        display: none;
+    }
+
 .request__column-first p:nth-child(2)::after {
     bottom: 80px;
     left: -50px;
@@ -421,6 +452,13 @@ body {
 .request__column-last p:nth-child(1)::after {
     bottom: 20px;
     left: -80px;
+}
+
+@media (max-width:1130px) {
+    .request__column-first p:nth-child(2)::after,
+    .request__column-last p:nth-child(1)::after {
+        display: none;
+    }
 }
 
 .request__column-first p:nth-child(1) {
@@ -433,9 +471,10 @@ body {
 
 .request__column-last p:nth-child(2) {
     position: relative;
-    padding: 30px 15px 65px 30px;
+    padding: 30px 15px 80px 30px;
     background: #DED3FC;
     border-radius: 27px;
+    font-family: 'Nunito';
 }
 
 .request__column-last p {
@@ -490,6 +529,13 @@ body {
     }
 }
 
+@media (max-width:1088px) {
+    .request__btn {
+        right: 30%;
+        bottom: -3%;
+    }
+}
+
 .request__column-last p:nth-child(2)::before {
     position: absolute;
     content: '';
@@ -498,6 +544,119 @@ body {
     height: 124px;
     left: -45px;
     bottom: -55px;
+}
+
+.request__column-last p:nth-child(2)::after {
+    display: none;
+}
+
+@media (min-width:535px) and (max-width:750px) {
+        .request__column-last p:nth-child(2) {
+            padding-right: 91px;
+        }
+
+}
+
+@media (max-width:750px) {
+
+    .request {
+        margin-top: 50px;
+    }
+
+    .request__title::before {
+        display: none;
+    }
+
+    .request__title::after {
+        display: block;
+        position: absolute;
+        content: '';
+        background-image: url(../assets/images/leafs-mobile.png);
+        background-repeat:no-repeat;
+        width: auto;
+        height: 190.05px;
+        top: -190px;
+        right: 0;
+        left: 0;
+
+    }
+
+    .request__column-first p:nth-child(2)::before,
+        .request__column-last p:nth-child(1)::before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 150px;
+        background-image: url(../assets/images/point-mobile.png);
+        background-repeat:no-repeat;
+    }
+
+        .request__column-first p:nth-child(2)::before {
+            top: -40%;
+        }
+        .request__column-last p:nth-child(1)::before {
+            top: -80%;
+        }
+
+    .request__column {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+
+    .request__btn {
+        right: 25%;
+    }
+
+    .request__column-first p:nth-child(1) {
+        font-size: 23px;
+        line-height: 24px;
+    }
+
+    .request__column-last p:nth-child(2)::before {
+        display: none;
+    } 
+    .request__column-last p:nth-child(2)::after {
+        display: block;
+        position: absolute;
+        content: '';
+        background-image: url(../assets/images/avatar-mobile.png);
+        width: 89px;
+        height: 89px;
+        right: 5%;
+        top: -40px;
+    }
+}
+
+@media (max-width:590px) {
+    .request__btn {
+        left: 0;
+        right: 0;
+        width: auto;
+        margin: 0 25%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:426px) {
+    .request__info {
+        margin: 0;
+    }
+
+    .request__btn {
+        margin: 0 15%;
+    }
+
+    .request__column-last p:nth-child(2) {
+        padding-bottom: 60px;
+    }
+
+    .request__column,
+    .request__column p,
+    .request__column-first p:nth-child(1) {
+        width: 99%;
+    }
 }
 
 .reviews {
@@ -1985,7 +2144,9 @@ body {
 }
 
 @media (max-width:415px) {
-    width: 300px;
+    .prod__desc {
+        width: 300px;
+    }
 }
 
 .milk,
@@ -2263,6 +2424,7 @@ body {
 @media (max-width: 390px) {
     .header__inner {
         padding-top: 10px;
+        margin-bottom: 0;
     }
 
     .header__main {
@@ -2282,7 +2444,6 @@ body {
 
     .header__menu-img {
         width: 45px;
-        height: 75px;
     }
 
     .products-main {

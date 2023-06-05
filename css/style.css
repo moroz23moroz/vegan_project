@@ -675,6 +675,17 @@ body {
 .reviews__inner {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.reviews__inner::after {
+    position: absolute;
+    content:'';
+    background-image: url(../assets/images/leaf-reviews.png);
+    width: 166px;
+    height: 204px;
+    bottom: -120px;
+    left: -70px;
 }
 
 .reviews__title {
@@ -699,7 +710,7 @@ body {
   gap: 10px;
   padding: 37px 4px 40px 22px;
   border-radius: 50px 50px 50px 0px;
-  width: 80%;
+  width: 100%;
   height: auto;
   background: #ffffff;
 }
@@ -721,7 +732,7 @@ body {
 
 .reviews__slider {
   position: relative;
-  padding: 0 100px;
+  padding: 0 140px;
 }
 
 .reviews__author:after {
@@ -741,11 +752,11 @@ body {
 }
 
 .swiper-button-left {
-  left: -50px;
+  left: -95px;
 }
 
 .swiper-button-right {
-  right: -100px;
+  right: -135px;
 }
 
 .footer {

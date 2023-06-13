@@ -227,7 +227,8 @@ body {
 .promo__container,
 .about__container,
 .container__request,
-.products__container {
+.products__container,
+.inner {
   max-width: calc(345px + (1200 - 345) * ((100vw - 375px) / (1440 - 375)));
   margin: 0 auto;
   padding: 0 15px;
@@ -237,7 +238,7 @@ body {
   padding: 0;
 }
 
-@media (min-width: 1941px) {
+@media (min-width: 1441px) {
   .container,
   .container__attention,
   .promo__container,
@@ -271,6 +272,15 @@ body {
   .about__container {
     padding: 0 10px;
   }
+}
+
+.inner {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  margin: 50px auto;
 }
 
 .header__inner {
@@ -520,7 +530,7 @@ body {
 .request__btn {
   position: absolute;
   right: 50px;
-  bottom: 0;
+  bottom: 20px;
   width: 264px;
   height: 63px;
   color: white;
@@ -1584,35 +1594,6 @@ body {
   }
 }
 
-/* .about__leafs {
-    position: relative;
-}
-.leaf15 {
-    position: absolute;
-    content: '';
-    background-image: url(../assets/images/pic-15.png);
-    width: 130px;
-    height: 200px;
-    left: -150px;
-}
-.leaf64 {
-    position: absolute;
-    content: '';
-    background-image: url(../assets/images/64.png);
-    width: 100px;
-    height: 130px;
-    left: 350px;
-}
-.leaf11 {
-    position: absolute;
-    content: '';
-    background-image: url(../assets/images/pic-11.png);
-    width: 150px;
-    height: 200px;
-    left: 500px;
-    top: -90px;
-} */
-
 .details {
   margin-bottom: 180px;
 }
@@ -1627,7 +1608,7 @@ body {
 .details__left {
   width: 51%;
   max-width: 546px;
-  max-height: 330px;
+  height: auto;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 27px;
   padding: 35px 120px 0px 40px;
@@ -1636,7 +1617,6 @@ body {
 .details__right {
   width: 47%;
   max-width: 546px;
-  max-height: 300px;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 27px;
   padding: 30px 30px 0px 50px;

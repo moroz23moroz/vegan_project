@@ -196,3 +196,7 @@ input:focus,
 textarea:focus {
     outline: none;
 }
+
+a {
+    cursor: pointer;
+}

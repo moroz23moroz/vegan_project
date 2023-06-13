@@ -1,61 +1,77 @@
 "use strict";
 
 const smoothScroll = () => {
-    const links = document.querySelectorAll('.menu-link')
+  const links = document.querySelectorAll(".menu-link");
 
-    links.forEach((link) => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault()
-            const section = document.querySelector(link.getAttribute('href'))
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const section = document.querySelector(link.getAttribute("href"));
 
-            section.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-                inline: "center",
-            });
-        })
-    })
-}
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "center",
+      });
+    });
+  });
+};
 
-smoothScroll()
+smoothScroll();
 
 const openMenu = () => {
-    const burger = document.querySelector('.header__menu')
+  const burger = document.querySelector(".header__menu");
 
-    burger.addEventListener('click', (event) => {
-        const mobile = document.querySelector('.header__mobile')
-        mobile.classList.toggle("action")
-    })
-}
+  burger.addEventListener("click", (event) => {
+    const mobile = document.querySelector(".header__mobile");
+    mobile.classList.toggle("action");
+  });
+};
 
-openMenu()
+openMenu();
 
 const closeMenu = () => {
-    const close = document.querySelector('.menu__close')
+  const close = document.querySelector(".menu__close");
 
-    close.addEventListener('click', (event) => {
-        const mobile = document.querySelector('.header__mobile')
-        mobile.classList.remove("action")
-    })
-}
+  close.addEventListener("click", (event) => {
+    const mobile = document.querySelector(".header__mobile");
+    mobile.classList.remove("action");
+  });
+};
 
-closeMenu()
+closeMenu();
 
-const swiper = new Swiper('.swiper', {
-    loop: true,
-    slidesPerView: 2,
-    spaceBetween: 90,
-    slidesPerGroup: 1,
-    navigation: {
-        nextEl: '.swiper-button-left',
-        prevEl: '.swiper-button-right',
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: 2,
+  slidesPerGroup: 1,
+  breakpoints: {
+    320: {
+      spaceBetween: 20,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: ".mob-arr__right",
+        prevEl: ".mob-arr__left",
+      },
+      pagination: {
+        clickable: true,
+      },
     },
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-        },
-        680: {
-            slidesPerView: 2
-        }
-    }
+    968: {
+      slidesPerView: 2,
+    },
+    1015: {
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-right",
+        prevEl: ".swiper-button-left",
+      },
+    },
+    1270: {
+      spaceBetween: 60,
+    },
+    1385: {
+      spaceBetween: 90,
+    },
+  },
 });

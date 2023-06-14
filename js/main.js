@@ -42,7 +42,10 @@ const closeMenu = () => {
 closeMenu();
 
 const swiper = new Swiper(".swiper", {
-  loop: true,
+  autoplay: {
+    loop: true,
+    delay: 3000
+  },
   slidesPerView: 2,
   slidesPerGroup: 1,
   breakpoints: {
@@ -60,6 +63,7 @@ const swiper = new Swiper(".swiper", {
     },
     968: {
       slidesPerView: 2,
+      spaceBetween: 40,
     },
     1015: {
       spaceBetween: 50,

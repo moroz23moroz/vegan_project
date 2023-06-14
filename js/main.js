@@ -54,7 +54,8 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".mob-arr__left",
       },
       pagination: {
-        clickable: true,
+        el: ".swiper-pagination",
+        type: "fraction",
       },
     },
     968: {

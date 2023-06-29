@@ -416,13 +416,14 @@ iframe {
 }
 
 .request__column {
-  width: 550px;
+  width: 53%;
   display: flex;
   flex-direction: column;
   gap: 55px;
 }
 
 .request__column-last {
+  width: 47%;
   align-items: end;
 }
 
@@ -1085,7 +1086,7 @@ iframe {
 .promo__btn-text {
   font-family: Roboto;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 36px;
   color: #ffffff;
   /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -2030,7 +2031,7 @@ iframe {
   display: flex;
   font-family: "Nunito";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 27px;
   line-height: 37px;
   color: #ffffff;

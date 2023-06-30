@@ -927,6 +927,10 @@ iframe {
   justify-content: space-between;
 }
 
+.footer__main span {
+  font-style: italic;
+}
+
 @media (max-width: 1405px) {
   .footer__inner {
     gap: 75px;
@@ -2238,6 +2242,10 @@ iframe {
   font-weight: 500;
   font-size: 20px;
   line-height: 27px;
+}
+
+.products-main__text a {
+  color: inherit;
 }
 
 .products-table {

@@ -154,8 +154,9 @@ body {
 }
 
 body::-webkit-scrollbar {
+  background: inherit;
   height: 0.5rem;
-  width: 1rem;
+  width: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -1465,6 +1466,7 @@ iframe {
   background: #ded3fc;
   border: 1px solid #ded3fc;
   border-radius: 29px;
+  cursor: pointer;
 }
 
 .about__application-text {
@@ -2015,6 +2017,26 @@ iframe {
   margin-left: auto;
 }
 
+.leaf610 {
+  position: absolute;
+  content: "";
+  background-image: url(../assets/images/610.png);
+  width: 160px;
+  height: 200px;
+  right: 630px;
+  top: 280px;
+}
+
+.leaf611 {
+  position: absolute;
+  content: "";
+  background-image: url(../assets/images/611.png);
+  width: 110px;
+  height: 136px;
+  right: 390px;
+  top: 220px;
+}
+
 @media (min-width: 1220px) and (max-width: 1419px) {
   .container__attention {
     max-width: calc(92vw + (98 - 92) * ((100vw - 1205px) / (1419 - 1205)));
@@ -2051,7 +2073,9 @@ iframe {
 
 @media (max-width: 999px) {
   .attention__inner::after,
-  .attention__inner::before {
+  .attention__inner::before,
+  .leaf610,
+  .leaf611 {
     display: none;
   }
 
@@ -2061,7 +2085,6 @@ iframe {
     margin: 0 auto;
     padding-bottom: 70px;
   }
-
   .attention__info::after {
     position: absolute;
     content: "";

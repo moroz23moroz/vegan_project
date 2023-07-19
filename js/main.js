@@ -46,8 +46,8 @@ const swiper = new Swiper(".swiper", {
     loop: true,
     delay: 3000
   },
-  slidesPerView: 2,
   slidesPerGroup: 1,
+  slidesPerView: 2,
   breakpoints: {
     320: {
       spaceBetween: 20,

@@ -716,12 +716,10 @@ iframe {
 }
 
 
-
 .reviews__text {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: auto;
   padding: 0;
   border-radius: 50px 50px 50px 0px;
   height: auto;

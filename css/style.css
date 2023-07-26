@@ -763,7 +763,16 @@ iframe {
   border-radius: 50px 50px 50px 0px;
   height: auto;
   background: #ffffff;
+  font-size: 22px;
 }
+
+@media (max-width: 1435px) {
+  .reviews__text {
+    width: 400px;
+  }
+}
+
+
 
 @media (max-width: 1220px) {
   .reviews__text {
@@ -773,17 +782,60 @@ iframe {
   }
 }
 
+.big {
+  width: 1000px;
+}
+
+
 .reviews__text-b {
-  line-height: normal;
-  font-size: 15px;
-  width: 1001px;
+  margin: 0 auto;
+  width: 850px;
+  padding-right: 35px;
+  padding-left: 35px;
 }
 
-.reviews__text p:nth-child(1) {
-  padding: 35px 10px 0 35px;
+@media (max-width: 1384px) {
+  .slick-track {
+    gap: 62px;
+  }
+
+  @media (max-width: 1263px) {
+    .swiper-wrapper {
+      margin: 0 45px;
+    }
+  }
+
+  @media (max-width: 1160px) {
+    .swiper-wrapper {
+      padding: 0 15px;
+    }
+    .slick-track {
+      gap: 34px;
+    }
+  }
+
+  .reviews__text {
+    height: 420px;
+  }
+
+  .big {
+    width: 860px;
+  }
+
+  .reviews__text-b {
+    width: 801px;
+  }
 }
 
-.reviews__text p:nth-child(2) {
+.reviews__text-b .reviews__author {
+  padding-bottom: 30px;
+}
+
+.reviews__text p {
+  padding: 35px 18px 0 35px;
+}
+
+.reviews__author p {
   font-family: "Nunito";
   font-weight: 800;
   font-size: 25px;
@@ -816,14 +868,33 @@ iframe {
   right: 0;
 }
 
-.reviews__author:after {
+.author:after {
   position: absolute;
   content: "";
   background-image: url(../assets/images/reviews-leaf.svg);
   width: 208px;
   height: 204.13px;
-  bottom: -110px;
+  bottom: -92px;
   right: 50px;
+}
+
+.reviews__text-b .author:after {
+  bottom: -58px;
+}
+
+.author__two:after {
+  position: absolute;
+  content: "";
+  background-image: url(../assets/images/author_two.png);
+  width: 208px;
+  height: 204.13px;
+  top: -312px;
+  right: -35px;
+}
+
+.author__two p {
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 
 .swiper-pagination {
@@ -831,37 +902,22 @@ iframe {
 }
 
 @media (max-width: 1384px) {
-  .reviews__slider {
-    padding: 0 60px;
-  }
-}
-
-@media (max-width: 1269px) {
-  .reviews__slider {
-    padding: 0 50px;
-  }
-
   .reviews__text {
     gap: 0;
   }
-
-  .swiper {
-    height: 375px;
-  }
 }
 
-@media (max-width: 1153px) {
-  .swiper {
-    height: 422px;
-  }
-}
+@media (max-width: 1175px) {
 
-@media (max-width: 1014px) {
-  .swiper {
+  .slick-track {
+    gap: 20px;
+    height: 361px;
+  }
+  
+  .reviews__text,
+  .big {
+    width: auto;
     height: auto;
-  }
-  .reviews__slider {
-    padding: 0 40px 80px 40px;
   }
 
   .swiper-button-right {
@@ -874,7 +930,7 @@ iframe {
 
   .reviews__nav {
     display: block;
-    bottom: 0;
+    bottom: -100px;
     position: absolute;
   }
 
@@ -890,32 +946,12 @@ iframe {
     display: none;
   }
 
-  .swiper-pagination {
-    display: block;
-  }
-}
-
-@media (max-width: 967px) {
-  .reviews__slider {
-    padding: 0 20px 72px 20px;
-  }
-
   .mob-arr__left {
     left: 0;
   }
 
   .mob-arr__right {
     right: 0;
-  }
-}
-
-@media (max-width: 629px) {
-  .reviews__text {
-    height: auto;
-  }
-
-  .reviews__text p:nth-child(2) {
-    padding-bottom: 30px;
   }
 }
 
@@ -1098,7 +1134,7 @@ iframe {
   width: 455px;
   font-family: Manrope;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 27px;
   margin-bottom: 30px;
 }
@@ -1424,6 +1460,7 @@ iframe {
 .about__content,
 .about__count {
   width: 50%;
+  z-index: 99;
 }
 
 .about__points {
@@ -1445,6 +1482,7 @@ iframe {
 
 .about__count-info {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .info {
@@ -1526,9 +1564,8 @@ iframe {
 }
 
 .about__application {
-  width: 100%;
-  height: 50px;
-  margin: 30px auto;
+  padding: 10px 35px;
+  align-self:center;
   background: #ded3fc;
   border: 1px solid #ded3fc;
   border-radius: 29px;
@@ -2181,14 +2218,15 @@ iframe {
 
 .attention__info {
   display: flex;
-  font-family: "Nunito";
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
-  line-height: 37px;
+  line-height: normal;
   color: #ffffff;
   padding: 25px;
   width: 822px;
+  z-index: 99;
 }
 
 @media (max-width: 1219px) {
@@ -2260,15 +2298,7 @@ iframe {
     background-size: cover;
     background-position: top center;
   }
-  /* .attention__info::before {
-    position: absolute;
-    content: "";
-    background-image: url(../assets/images/frame-bg.png);
-    width: 335px;
-    height: 420px;
-    left: 0;
-    top: 0;
-  } */
+
   .attention__info::after {
     bottom: -277px;
   }
@@ -2277,6 +2307,7 @@ iframe {
 .text-link {
   color: #ffffff;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .attention__inner::before {

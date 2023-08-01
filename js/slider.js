@@ -11,7 +11,7 @@ $(document).ready(function () {
     prevArrow: ".swiper-button-left",
     responsive: [
       {
-        breakpoint: 1174,
+        breakpoint: 1176,
         settings: {
           dots: true,
           nextArrow: ".mob-arr__right",
@@ -19,7 +19,7 @@ $(document).ready(function () {
           variableWidth: false,
           slidesToShow: 1,
           slidesToScroll: 1,
-          infinite: false,
+          swipeToSlide: true,
         },
       },
     ],

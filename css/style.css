@@ -772,8 +772,6 @@ iframe {
   }
 }
 
-
-
 @media (max-width: 1220px) {
   .reviews__text {
     font-weight: 700;
@@ -785,7 +783,6 @@ iframe {
 .big {
   width: 1000px;
 }
-
 
 .reviews__text-b {
   margin: 0 auto;
@@ -908,12 +905,11 @@ iframe {
 }
 
 @media (max-width: 1175px) {
-
   .slick-track {
     gap: 20px;
     height: 361px;
   }
-  
+
   .reviews__text,
   .big {
     width: auto;
@@ -1565,7 +1561,7 @@ iframe {
 
 .about__application {
   padding: 10px 35px;
-  align-self:center;
+  align-self: center;
   background: #ded3fc;
   border: 1px solid #ded3fc;
   border-radius: 29px;
@@ -2399,13 +2395,107 @@ iframe {
 }
 
 .products-main__title {
+  position: relative;
   font-family: "Nunito";
   font-weight: 900;
   font-size: 51px;
   line-height: 58px;
 }
 
+.products-main__title::before {
+  position: absolute;
+  content: none;
+  background-image: url(../assets/images/prod-leaf-1.png);
+  bottom: 28px;
+  right: 45px;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+}
+
+.products-main__title::after {
+  position: absolute;
+  content: none;
+  background-image: url(../assets/images/prod-leaf-2.png);
+  bottom: -80px;
+  right: 110px;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+}
+
+.products-main__text::before {
+  position: absolute;
+  content: none;
+  background-image: url(../assets/images/prod-leaf-3.png);
+  bottom: 370px;
+  right: -25px;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+}
+
+.prod__leaf::before {
+  position: absolute;
+  content: none;
+  background-image: url(../assets/images/product-leaf-a.png);
+  bottom: 394px;
+  left: 35px;
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+}
+
+.prod__leaf::after {
+  position: absolute;
+  content: none;
+  background-image: url(../assets/images/products-leaf-4.png);
+  top: 240px;
+  left: 35px;
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+}
+
+.text__leaf {
+  position: relative;
+  z-index: 99;
+}
+
+.text__leaf::before {
+  position: absolute;
+  content: none;
+  background-image: url(../assets/images/text__leaf.png);
+  bottom: 310px;
+  left: 164px;
+  height: 70px;
+  width: 70px;
+  background-repeat: no-repeat;
+}
+
+.text__leaf::after {
+  position: absolute;
+  content: none;
+  background-image: url(../assets/images/text__leaf2.png);
+  bottom: 89px;
+  left: 115px;
+  height: 90px;
+  width: 150px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 @media (max-width: 636px) {
+  .wrapper-prod {
+    background: linear-gradient(
+      180deg,
+      #5400dc 2.65%,
+      #9e3cff 21.35%,
+      #7017ea 38.54%,
+      #9e3cff 63.02%,
+      #5400dc 86.98%
+    );
+  }
   .products-main__inner {
     width: auto;
   }
@@ -2413,6 +2503,34 @@ iframe {
   .products-main__title {
     font-size: 33px;
     line-height: 42px;
+  }
+
+  .products-main__title::before {
+    content: "";
+  }
+
+  .products-main__text::before {
+    content: "";
+  }
+
+  .products-main__title::after {
+    content: "";
+  }
+
+  .prod__leaf::before {
+    content: "";
+  }
+
+  .prod__leaf::after {
+    content: "";
+  }
+
+  .text__leaf::before {
+    content: "";
+  }
+
+  .text__leaf::after {
+    content: "";
   }
 
   .products-main__text {
@@ -2423,11 +2541,12 @@ iframe {
 }
 
 .products-main__text {
-  gap: 25px;
+  gap: 30px;
   font-family: "Manrope";
   font-weight: 500;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 26px;
+  z-index: 99;
 }
 
 .products-main__text a {
